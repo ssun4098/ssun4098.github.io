@@ -13,19 +13,22 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://ssun4098.github.io/categories/"/>
+    <link rel="canonical" href="http://ssun4098.github.io/2024/05/18/ecmamodules/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://ssun4098.github.io/categories/index.html">
+        <meta name="description" content="CommonJS 2009년에 자바스크립트 모듈을 만들기 위한 법칙으로 서버사이드 모듈을 만들고 불러오기 위해 개발  require, exports를 사용하여 모듈을 다룬다.  babel에서는 pacakge.json에 type:module을 선언해야 사용할 수 있다. 모듈 내보내기(exports)  1234567function add(a, b) &#123;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CommonJS와 ES modules">
+<meta property="og:url" content="http://ssun4098.github.io/2024/05/18/ECMAModules/index.html">
 <meta property="og:site_name" content="SnowBall Blog">
+<meta property="og:description" content="CommonJS 2009년에 자바스크립트 모듈을 만들기 위한 법칙으로 서버사이드 모듈을 만들고 불러오기 위해 개발  require, exports를 사용하여 모듈을 다룬다.  babel에서는 pacakge.json에 type:module을 선언해야 사용할 수 있다. 모듈 내보내기(exports)  1234567function add(a, b) &#123;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-05-15T06:49:34.000Z">
-<meta property="article:modified_time" content="2024-05-15T06:50:28.294Z">
+<meta property="article:published_time" content="2024-05-18T04:41:22.000Z">
+<meta property="article:modified_time" content="2024-05-19T12:37:19.292Z">
 <meta property="article:author" content="ssun4098">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
     
     
@@ -38,7 +41,7 @@
     
     <title>
         
-            Categories -
+            CommonJS와 ES modules -
         
         SnowBall Blog
     </title>
@@ -468,19 +471,228 @@
             <div class="main-content">
 
                 
-                    <div class="category-list-container">
-	<div >
-		<h1 class="category-header">
-			Categories
-		</h1>
-	</div>
-	<div class="category-list-content">
-		<ul class="all-category-list"><li class="all-category-list-item"><a class="all-category-list-link" href="/categories/javascript/">javascript</a><span class="all-category-list-count">4</span></li></ul>
-	</div>
-	<div class="category-comments">
-		
-	</div>
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">CommonJS와 ES modules</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/redefine-avatar.svg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">ssun4098</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-05-18 13:41:22</span>
+        <span class="mobile">2024-05-18 13:41:22</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-05-19 21:37:19</span>
+            <span class="mobile">2024-05-19 21:37:19</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/javascript/">javascript</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/javascript/">javascript</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h1 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h1><ul>
+<li><p>2009년에 자바스크립트 모듈을 만들기 위한 법칙으로 서버사이드 모듈을 만들고 불러오기 위해 개발</p>
+</li>
+<li><p>require, exports를 사용하여 모듈을 다룬다.</p>
+</li>
+<li><p>babel에서는 pacakge.json에 type:module을 선언해야 사용할 수 있다.</p>
+<h2 id="모듈-내보내기-exports"><a href="#모듈-내보내기-exports" class="headerlink" title="모듈 내보내기(exports)"></a>모듈 내보내기(exports)</h2></li>
+</ul>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">add</span>(<span class="params">a, b</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = add</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<h2 id="모듈-가져오기"><a href="#모듈-가져오기" class="headerlink" title="모듈 가져오기"></a>모듈 가져오기</h2><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">const</span> add = <span class="built_in">require</span>(<span class="string">&#x27;./파일명&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<h1 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h1><ul>
+<li>import와 export로 모듈을 내보내거나 가져올 수 있다.</li>
+<li>브라우저에서 사용할려면 script 태그에 type&#x3D;”module” 어트리뷰트를 추가햐애 한다.</li>
+<li>또한 JS 파일의 확장자를 mjs로 설정하는 것을 권장하고 있다.</li>
+</ul>
+<h1 id="번외1-ReactJS에서-NPM-패키지-모듈-사용"><a href="#번외1-ReactJS에서-NPM-패키지-모듈-사용" class="headerlink" title="번외1: ReactJS에서 NPM 패키지 모듈 사용"></a>번외1: ReactJS에서 NPM 패키지 모듈 사용</h1><p>NPM에서는 CommonJS를 기본 모듈로 채택한다는 것은 require, module.exports를 사용한다. 그런데 React, Vue 같은 프론트 엔드 개발을 할 떄<br>NPM 패키지 모듈을 불러오기 위해 ES6문법을 사용하는데 왜 문제가 발생하지 않을까? 그건 Babel 등의 컴파일러가 import, export 등의 코드를<br>CommonJS 기반의 코드로 변환해주기 때문이다. 그러고  나면 Webpack에 의해 JS 모듈들의 번들링이 가능해진다.</p>
+<h1 id="번외2-CommonJS와-ESM-모두-대응하는-라이브러리-개발"><a href="#번외2-CommonJS와-ESM-모두-대응하는-라이브러리-개발" class="headerlink" title="번외2: CommonJS와 ESM 모두 대응하는 라이브러리 개발"></a>번외2: CommonJS와 ESM 모두 대응하는 라이브러리 개발</h1><br>
+## 왜 두 방식을 지원해야하는가?
+<br>
+- 브라우저 환경에서는 페이지 렌더링을 빠르게 하는 것이 중요한데, 이떄 JS는 로딩되어 실행되는 동안 페이지 렌더링을 중단시키는 리소스 중 하나이다.
+- 따라서 JS 번들의 사이즈를 줄여서 렌더링이 중단되는 시간을 최소화 하는 것이 중요한데 이를 Tree-shaking이다.
+  - Tree-Shaking이란 필요하느 않는 코드와 사용되지 않는 코드를 삭제하여 JS 번들의 크기를 가볍게 만드는 것을 말한다.
+- CJS는 Tree-Shaking이 이렵고 ESM은 쉽다.
+
+<h2 id="왜-CJS는-Tree-Shaking이-어렵나"><a href="#왜-CJS는-Tree-Shaking이-어렵나" class="headerlink" title="왜 CJS는 Tree-Shaking이 어렵나?"></a>왜 CJS는 Tree-Shaking이 어렵나?</h2><br>
+- CJS는 빌드 타임에 정적 분석이 아닌 런타임 시점에서 모듈 관계를 파악할 수 있다. => 페이지 랜더링이 늦어짐
+- ESM은 정적인 구조로 모듈끼리 의존하도록 강제하고 import path에 동적인 값을 사용할 수 없으며 export는 항상 최상위 스코프에서만 사용하는 등 Tree-Shaking이 더 쉽다.
+
+<h1 id="파일-구별법-CJS인지-MJS인지"><a href="#파일-구별법-CJS인지-MJS인지" class="headerlink" title="파일 구별법(CJS인지 MJS인지)"></a>파일 구별법(CJS인지 MJS인지)</h1>  <br>
+- .js: package.json의 type 필드의 값이 commonjs이면 .js 파일은 CJS로 해석, module이면 ESM으로 해석(기본값은 commonjs)
+- .cjs: 항상 CJS로 해석
+- .mjs: 항상 MJS로 해석
+
+<h1 id="엔트리-포인트-지정"><a href="#엔트리-포인트-지정" class="headerlink" title="엔트리 포인트 지정"></a>엔트리 포인트 지정</h1><br>
+- main 필드는 패캐지의 진입점을 말한다. 예를들어 사용자가 apple 이라는 패키지를 설치하고 require('apple')로 모듈을 호출하면 main으로 지정한 모듈의 exports 객체가 반환된다.
+
+<h1 id="Subpath-exports-지원"><a href="#Subpath-exports-지원" class="headerlink" title="Subpath exports 지원"></a>Subpath exports 지원</h1><br>
+기존에는 filesystem 기반으로 패키지 내부의 임의의 JS파일에 접근할 수 있었고 filesystem 상의 위치와 import path를 다르게 둘 수 없었다.
+하지만 exports field를 사용하여 subpath exports를 사용하면 명시된 subpath 외에는 사용할 수 없고, filesystem 상의 위치와 import path를 다르게 지정할 수 있다.
+
+<h1 id="conditional-exports"><a href="#conditional-exports" class="headerlink" title="conditional exports"></a>conditional exports</h1><br>
+exports field에서는 똑같은 import path에 대해 특정 조건에 따라 다른 모듈을 제공할 수 있다.
+
+<h1 id="참고사이트"><a href="#참고사이트" class="headerlink" title="참고사이트"></a>참고사이트</h1><p>[CommonJS vs ES6]<a class="link"   target="_blank" rel="noopener" href="https://it-eldorado.tistory.com/92" >https://it-eldorado.tistory.com/92 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>[대응하는 라이브러리 개발하기: exports field]<a class="link"   target="_blank" rel="noopener" href="https://toss.tech/article/commonjs-esm-exports-field" >https://toss.tech/article/commonjs-esm-exports-field <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> CommonJS와 ES modules</li>
+        <li><strong>Author:</strong> ssun4098</li>
+        <li><strong>Created at
+                :</strong> 2024-05-18 13:41:22</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-05-19 21:37:19
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://ssun4098.github.io/2024/05/18/ECMAModules/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/javascript/">#javascript</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/05/16/repl/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">REPL과 module.exports</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">CommonJS와 ES modules</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CommonJS"><span class="nav-text">CommonJS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EB%AA%A8%EB%93%88-%EB%82%B4%EB%B3%B4%EB%82%B4%EA%B8%B0-exports"><span class="nav-text">모듈 내보내기(exports)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EB%AA%A8%EB%93%88-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0"><span class="nav-text">모듈 가져오기</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ES6"><span class="nav-text">ES6</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EB%B2%88%EC%99%B81-ReactJS%EC%97%90%EC%84%9C-NPM-%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9"><span class="nav-text">번외1: ReactJS에서 NPM 패키지 모듈 사용</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EB%B2%88%EC%99%B82-CommonJS%EC%99%80-ESM-%EB%AA%A8%EB%91%90-%EB%8C%80%EC%9D%91%ED%95%98%EB%8A%94-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EA%B0%9C%EB%B0%9C"><span class="nav-text">번외2: CommonJS와 ESM 모두 대응하는 라이브러리 개발</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%99%9C-CJS%EB%8A%94-Tree-Shaking%EC%9D%B4-%EC%96%B4%EB%A0%B5%EB%82%98"><span class="nav-text">왜 CJS는 Tree-Shaking이 어렵나?</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%ED%8C%8C%EC%9D%BC-%EA%B5%AC%EB%B3%84%EB%B2%95-CJS%EC%9D%B8%EC%A7%80-MJS%EC%9D%B8%EC%A7%80"><span class="nav-text">파일 구별법(CJS인지 MJS인지)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EC%97%94%ED%8A%B8%EB%A6%AC-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%A7%80%EC%A0%95"><span class="nav-text">엔트리 포인트 지정</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Subpath-exports-%EC%A7%80%EC%9B%90"><span class="nav-text">Subpath exports 지원</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#conditional-exports"><span class="nav-text">conditional exports</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EC%B0%B8%EA%B3%A0%EC%82%AC%EC%9D%B4%ED%8A%B8"><span class="nav-text">참고사이트</span></a></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
 
 
                 
@@ -563,6 +775,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
